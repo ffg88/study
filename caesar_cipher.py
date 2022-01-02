@@ -1,10 +1,10 @@
-"""
-Caesar's Cipher is a very simple encryption technique where the letter is replaced by another a fixed amount of positions
-down the alphabet.
-"""
+# Caesar's Cipher is a very simple encryption technique where the letter is replaced by another a fixed amount of
+# positions down the alphabet.
 
 
 def caesar(input_text, shift_amount, direction):
+    """Applies the cipher to an input text, shifting the letters an amount of positions in a positive direction if it's
+    encoding or in a negative direction if it's decoding."""
     output_text = ''
     if direction == 'decode':
         shift_amount = shift_amount * -1
